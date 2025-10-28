@@ -1,53 +1,277 @@
-<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>IlavRugan Auto Poster — Automate Pinterest Pins for Amazon Products</title>
-  <meta name="description" content="IlavRugan Auto Poster automates posting Amazon affiliate products to Pinterest using AI-generated captions and images.">
+  <meta charset="UTF-8">
+  <title>n8n Privacy Policy</title>
+  <title>IlavRugan Auto Poster - Automate Pinterest Pins for Amazon Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Automate Amazon Affiliate product posting to Pinterest using AI. Generate SEO-optimized pins effortlessly.">
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin:0; background:linear-gradient(135deg,#667eea,#764ba2); color:#222; }
-    .wrap { max-width:900px; margin:40px auto; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 12px 40px rgba(0,0,0,0.25); }
-    header { padding:40px; text-align:center; background:linear-gradient(135deg,#667eea,#764ba2); color:#fff; }
-    header .logo { font-size:48px; margin-bottom:10px; }
-    main { padding:32px; }
-    h1 { margin:0 0 8px; font-size:28px; }
-    p.lead { margin:0 0 16px; color:#444; }
-    .btn { display:inline-block; background:#764ba2; color:#fff; padding:12px 20px; border-radius:999px; text-decoration:none; font-weight:600; }
-    footer { background:#2d3748; color:#fff; text-align:center; padding:20px; }
-    a { color:inherit; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 40px;
+      text-align: center;
+      position: relative;
+    }
+    
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+    }
+    
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .tagline {
+      font-size: 1.2em;
+      opacity: 0.95;
+      font-weight: 300;
+    }
+    
+    main {
+      padding: 40px;
+    }
+    
+    section {
+      margin-bottom: 40px;
+    }
+    
+    h2 {
+      color: #667eea;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #f093fb;
+      display: inline-block;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .feature-card {
+      background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid transparent;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+      border-color: #667eea;
+    }
+    
+    .feature-icon {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+    
+    .feature-card h3 {
+      color: #764ba2;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
+    
+    .info-box {
+      background: #f8f9fa;
+      padding: 25px;
+      border-radius: 10px;
+      border-left: 5px solid #667eea;
+      margin-top: 20px;
+    }
+    
+    .info-box p {
+      margin: 10px 0;
+    }
+    
+    .info-box strong {
+      color: #667eea;
+    }
+    
+    a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    
+    a:hover {
+      color: #764ba2;
+      text-decoration: underline;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-size: 1.1em;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 20px;
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(102, 126, 234, 0.5);
+      text-decoration: none;
+    }
+    
+    footer {
+      background: #2d3748;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    
+    footer p {
+      margin: 5px 0;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+      
+      header {
+        padding: 40px 20px;
+      }
+      
+      main {
+        padding: 20px;
+      }
+      
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <h1>n8n Privacy Policy</h1>
+  <p>We do not collect, store, or share any personal user information.</p>
+  <p>All data is processed by Pinterest and other third-party tools securely.</p>
+  <p>For any concerns, contact us at mrnagur18@email.com.</p>
+  <div class="container">
     <header>
       <div class="logo">📌</div>
       <h1>IlavRugan Auto Poster</h1>
-      <div style="opacity:.95">Automate Amazon affiliate product posting to Pinterest with AI-generated captions and images.</div>
+      <p class="tagline">Automating Amazon Affiliate product posting to Pinterest using AI</p>
     </header>
-
+    
     <main>
-      <p class="lead">
-        IlavRugan Auto Poster connects to your Pinterest account (via OAuth) and posts product pins you select from Amazon. OAuth access is used only to create pins and manage posts on your behalf; we do not sell your personal data.
-      </p>
-
-      <h2>Key Features</h2>
-      <ul>
-        <li>AI-powered caption generation for SEO-optimized Pin descriptions</li>
-        <li>Auto image processing to create Pinterest-ready visuals</li>
-        <li>Scheduling and logging of posted Pins</li>
-      </ul>
-
-      <p>
-        For details about what we collect and how we use it, view our <a href="privacy-policy.html" class="btn">Privacy Policy</a>.
-      </p>
-
-      <h2 style="margin-top:24px">Contact</h2>
-      <p>If you have questions or need help, email us at <a href="mailto:nagurx18@gmail.com">nagurx18@gmail.com</a>.</p>
+      <section>
+        <h2>🚀 About This App</h2>
+        <p>IlavRugan Auto Poster is a powerful automation tool that streamlines your Pinterest marketing workflow. It automatically generates Pinterest pins for selected Amazon.in products, creates SEO-optimized captions, generates engaging product images, posts them to your Pinterest board, and logs all data for comprehensive tracking.</p>
+        
+        <div class="features">
+          <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>AI-Powered</h3>
+            <p>Leverages artificial intelligence to create compelling, SEO-optimized captions that drive engagement.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🖼️</div>
+            <h3>Auto Image Generation</h3>
+            <p>Automatically creates eye-catching product images perfect for Pinterest's visual platform.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Analytics & Logging</h3>
+            <p>Track all your posts with detailed logging for performance analysis and optimization.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Automated Posting</h3>
+            <p>Schedule and post to Pinterest automatically, saving you hours of manual work.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+        <h2>👨‍💻 Developer & Contact</h2>
+        <div class="info-box">
+          <p><strong>Developed by:</strong> Nagur</p>
+          <p><strong>Contact Email:</strong> <a href="mailto:nagurx18@gmail.com">nagurx18@gmail.com</a></p>
+          <p>Have questions or feedback? Feel free to reach out anytime!</p>
+        </div>
+      </section>
+      
+      <section>
+        <h2>🔒 Privacy & Data Use</h2>
+        <div class="info-box">
+          <p>Your privacy is our top priority. We are committed to protecting your data:</p>
+          <ul style="margin-left: 20px; margin-top: 10px;">
+            <li>No user data is shared with third parties</li>
+            <li>OAuth tokens are used exclusively for posting content to your Pinterest account</li>
+            <li>All data processing is secure and transparent</li>
+            <li>You maintain full control over your account at all times</li>
+          </ul>
+          <a href="privacy-policy.html" class="cta-button" style="margin-top: 20px;">View Full Privacy Policy</a>
+        </div>
+      </section>
     </main>
-
+    
     <footer>
-      <div>&copy; 2025 IlavRugan Auto Poster — Your privacy is our priority</div>
+      <p>&copy; 2025 IlavRugan Auto Poster</p>
+      <p>Empowering Pinterest marketers with automation</p>
     </footer>
   </div>
 </body>
